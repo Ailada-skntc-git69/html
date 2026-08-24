@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>back to top</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="backToTopBtn" onclick="goTop()">Top</button>
+        <script>
+            function goTop(){
+                window.top.scrollTo({
+                    top:0,
+                    behavior:"smooth"
+                });
+            }
+        </script>
+    </body>
+</html>
